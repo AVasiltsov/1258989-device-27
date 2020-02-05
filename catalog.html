@@ -11,7 +11,10 @@
     <a href="index.html">
       <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     </a>
-    <!--здесь будет форма для поиск-->
+    <form action="/">
+      <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+      <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+    </form>
     <p>Валентин Петухов
       <a href="#">Выйти</a>
     </p>
@@ -46,11 +49,65 @@
 
     <section>
       <h2>Фильтр:</h2>
-      <!--Здесь будет форма-->
+      <form action="/">
+        <p>
+          <label for="price-field">Стоимость:</label><br>
+          от 0<input type="range" name="price" id="price-field">до 5000
+        </p>
+        <fieldset>
+          <legend>Цвет:</legend>
+          <p>
+            <label>
+              <input type="checkbox" name="color-black" checked>
+              Черный
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="color-white">
+              Белый
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="color-blue" checked>
+              Синий
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="color-red" checked>
+              Красный
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="color-ping">
+              Розовый
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <p>
+            <label>
+              <input type="radio" name="bluetooth" value="on" checked>
+              Есть
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="bluetooth" value="off">
+              Нет
+            </label>
+          </p>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section>
-      <h2>Каталог товаров</h2>
+      <h2 class="visually-hidden">Каталог товаров</h2>
       <b>Сортировка:</b>
       <ul>
         <li><a href="#">По цене</a></li>
@@ -130,9 +187,9 @@
     </ul>
     <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     <ul>
-      <li><a href="#"><img src="img/fb.png" width="32" height="32" alt="иконка Фейсбук">Фейсбук</a></li>
-      <li><a href="#"><img src="img/instagram.png" width="32" height="32" alt="иконка Инстаграм">Инстаграм</a></li>
-      <li><a href="#"><img src="img/twitter.png" width="32" height="32" alt="иконка твитер">Твитер</a></li>
+      <li><a href="#"><img src="img/fb.png" width="32" height="32" alt="Фейсбук"></a></li>
+      <li><a href="#"><img src="img/instagram.png" width="32" height="32" alt="Инстаграм"></a></li>
+      <li><a href="#"><img src="img/twitter.png" width="32" height="32" alt="Твитер"></a></li>
     </ul>
     <a href="https://htmlacademy.ru/">
       <img src="img/logo-html.png" width="27" height="35" alt="логотип htmlacademy">

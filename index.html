@@ -11,7 +11,10 @@
     <a>
       <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     </a>
-    <!--здесь будет форма для поиск-->
+    <form action="/">
+      <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+      <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+    </form>
     <a href="#">Войти</a>
     <a href="#">Сравнить</a>
     <a href="#">Корзина</a>
@@ -35,9 +38,9 @@
   </header>
 
   <main>
-    <h1>Интернет-магазин Device</h1>
+    <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <section>
-      <h2>Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <ol>
         <li>
           <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -103,41 +106,41 @@
     </section>
 
     <section>
-      <h2>Категории интернет-магазина</h2>
+      <h2 class="visually-hidden">Категории интернет-магазина</h2>
       <ul>
         <li>
           <a href="#">
-            <img src="img/popular-1.png" width="97" height="55" alt="Категория Виртуальная реальность">
+            <img src="img/popular-1.png" width="97" height="55" alt="Очки виртуальной реальности">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/popular-2.png" width="86" height="117" alt="Категория Моноподы для селфи">
+            <img src="img/popular-2.png" width="86" height="117" alt="Монопод для селфи">
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/popular-3.png" width="71" height="87" alt="Категория Экшн-камеры">
+            <img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/popular-4.png" width="107" height="65" alt="Категория Фитнес-браслеты">
+            <img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслет">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/popular-5.png" width="56" height="98" alt="Категория Умные часы">
+            <img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
             <h3>Умные часы</h3>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/poppular-6.png" width="132" height="69" alt="Категория Квадрокоптеры">
+            <img src="img/poppular-6.png" width="132" height="69" alt="Квадрокоптер">
             <h3>Квадрокоптеры</h3>
           </a>
         </li>
@@ -145,7 +148,7 @@
     </section>
 
     <section>
-      <h2>Дополнительная информация</h2>
+      <h2 class="visually-hidden">Дополнительная информация</h2>
       <ul>
         <li>
           <h3>Доставка</h3>
@@ -166,7 +169,7 @@
     </section>
 
     <section>
-      <h2>Партнеры</h2>
+      <h2 class="visually-hidden">Партнеры</h2>
       <ul>
         <li><img src="img/logo-1.jpg" width="260" height="100" alt="Партнер dji"></li>
         <li><img src="img/logo-2.jpg" width="260" height="100" alt="Партнер sp gadjets"></li>
@@ -190,7 +193,7 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.jpg" width="560" height="222" alt="изображения адреса компании">
+      <img src="img/map.jpg" width="560" height="222" alt="Офис магазина: город Москва, улица строителей, дом 15">
       <a href="#">Напишите нам</a>
     </section>
   </main>
@@ -210,14 +213,42 @@
     </ul>
     <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     <ul>
-      <li><a href="#"><img src="img/fb.png" width="32" height="32" alt="иконка Фейсбук">Фейсбук</a></li>
-      <li><a href="#"><img src="img/instagram.png" width="32" height="32" alt="иконка Инстаграм">Инстаграм</a></li>
-      <li><a href="#"><img src="img/twitter.png" width="32" height="32" alt="иконка твитер">Твитер</a></li>
+      <li><a href="#"><img src="img/fb.png" width="32" height="32" alt="Фейсбук"></a></li>
+      <li><a href="#"><img src="img/instagram.png" width="32" height="32" alt="Инстаграм"></a></li>
+      <li><a href="#"><img src="img/twitter.png" width="32" height="32" alt="Твитер"></a></li>
     </ul>
     <a href="https://htmlacademy.ru/">
       <img src="img/logo-html.png" width="27" height="35" alt="логотип htmlacademy">
     </a>
   </footer>
+
+  <section>
+    <h3 class="visually-hidden">Отправить сообщение</h3>
+    <form action="/">
+      <p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="text-field">Текст письма:</label><br>
+        <textarea name="text" id="text-field" cols="30" rows="10">В свободной форме</textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть окно отправки сообщения</button>
+  </section>
+
+  <section>
+    <h3 class="visually-hidden">Как к нам проехать</h3>
+    <img src="img/map-big.jpg" width="960" height="559" alt="Офис магазина: город Москва, улица строителей, дом 15">
+    <p>
+      <button type="button">Закрыть окно проезда к магазину</button>
+    </p>
+  </section>
 </body>
 
 </html>
